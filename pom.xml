@@ -8,11 +8,6 @@
   <packaging>pom</packaging>
 
   <name>example</name>
-  <url>http://maven.apache.org</url>
-
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
 
   <dependencies>
     <dependency>
@@ -21,7 +16,15 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <dependency>
+		<groupId>org.jboss.spec</groupId>
+		<artifactId>jboss-javaee-7.0</artifactId>
+		<version>1.0.3.Final</version>
+		<type>pom</type>
+		<scope>provided</scope>
+	</dependency>
   </dependencies>
+  
   <modules>
   	<module>example-war</module>
   	<module>example-ejb</module>
